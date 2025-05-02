@@ -1,0 +1,68 @@
+<!-- Design a html form with block pattern that includes text input for users name,password,an email,input,checkbox, radio button, drop-down lista nd a submit button -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style> 
+        body {
+            background-color: beige;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .form-box {
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .select {
+            background-color: rgb(220, 131, 179);
+            color: white;
+        }
+
+        .button {
+            background-color: rgb(24, 106, 201);
+            color: white;
+            border: none;
+            border-radius: 18px;
+            font-family: Arial, sans-serif;
+            display: block;
+            padding: 5px 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form-box">
+            <h3> FORM </h3>
+            Name: <input type="text"><br><br>
+            Password: <input type="password"><br><br>
+            Email: <input type="text"><br><br>
+            Gender: 
+            <input type="radio" name="gender"> Male 
+            <input type="radio" name="gender"> Female
+            <br><br>
+            <select class="select">
+                <option>---Select Course---</option>
+                <option> Btech</option>
+                <option> Mba</option>
+                <option> Bba </option>
+                <option> Mtech</option>
+            </select>
+            <br><br>
+            <input type="checkbox"> I agree to the terms & conditions
+            <br><br>
+            <button class="button" type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
+ 
