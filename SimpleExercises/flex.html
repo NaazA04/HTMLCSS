@@ -1,0 +1,128 @@
+<!-- so as the name suggests a flex box is a flexible box that means it takes up only the space its content needs there are diffren properties 
+in flex box which are used to align the contents and everything -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FLEX BOX AND ITS PROPERTIES</title>
+    <style>
+        .cont1{
+            display: flex;
+            flex-direction: row;
+            margin-bottom:20px;
+        }
+
+        .cont2{
+            display: flex;
+            flex-direction: column;
+            margin-bottom:20px;
+        }
+        
+        .cont3{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: start;
+        }
+
+        .cont4{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            border-color: gray;
+            border-style: solid;
+            justify-content: start;
+        }
+
+        .cont5{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            align-items: center;
+            border-color: gray;
+            border-style: solid;
+            justify-content: center;
+        }
+
+        .cont6{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            align-items: center;
+            border-color: gray;
+            border-style: solid;
+            justify-content: end;
+        }
+
+        .cont7{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            align-items: center;
+            border-color: gray;
+            border-style: solid;
+            justify-content: space-between;
+        }
+
+        .cont8{
+            display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        border-color: gray;
+        border-style: solid;
+        border-width: 1px; 
+        justify-content: space-between;
+        align-items: flex-end; 
+        height: 150px;
+        }
+        /* you can align it in start center and end */
+
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="cont1">
+            <div style="background-color: pink;">Div 1</div>
+            <div style="background-color: rgb(127, 187, 239);"> Div 2</div>
+        </div>
+
+        <div class="cont2">
+            <div style="background-color: pink;">Div 1</div>
+            <div style="background-color: rgb(127, 187, 239);"> Div 2</div>
+        </div>
+
+        <div class="cont3">
+            <div style="background-color: pink;">Div 1</div>
+            <div style="background-color: rgb(127, 187, 239);"> Div 2</div>
+        </div>
+
+        <div class="cont4">
+            <div style="background-color: pink;height: 70px; width:100px">Div 1</div>
+            <div style="background-color: rgb(127, 187, 239); height:70px; width:100px"> Div 2</div>
+        </div>
+
+        <div class="cont5">
+            <div style="background-color: pink;height: 70px; width:100px">Div 1</div>
+            <div style="background-color: rgb(127, 187, 239); height:70px; width:100px"> Div 2</div>
+        </div>
+
+        <div class="cont6">
+            <div style="background-color: pink;height: 70px; width:100px">Div 1</div>
+            <div style="background-color: rgb(127, 187, 239); height:70px; width:100px"> Div 2</div>
+        </div>
+
+        <div class="cont7">
+            <div style="background-color: pink;height: 70px; width:100px">Div 1</div>
+            <div style="background-color: rgb(127, 187, 239); height:70px; width:100px"> Div 2</div>
+            <div style="background-color: rgb(157, 251, 196); height:70px; width:100px"> Div 3</div>
+        </div>
+
+        <div class="cont8">
+            <div style="background-color: pink;height: 70px; width:100px">Div 1</div>
+            <div style="background-color: rgb(127, 187, 239); height:70px; width:100px"> Div 2</div>
+            <div style="background-color: rgb(157, 251, 196); height:70px; width:100px"> Div 3</div>
+        </div>
+    </div>
+</body>
+</html>
