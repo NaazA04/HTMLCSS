@@ -1,0 +1,48 @@
+fieldset {
+    border: 2px solid rgb(47, 122, 202); 
+    padding: 20px;
+    width: 90%;          
+}
+
+legend {
+    color: rgb(47, 122, 202);            
+    font-weight: bold;     
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box; 
+    padding: 10px;         
+}
+
+select{
+    padding: 10px;
+}
+
+.submit{
+    background-color: #0c385a;
+    color: white;
+    border: none;
+    padding: 12px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    display: inline;
+    position: absolute;
+    right: 65%
+}
+
+.reset{
+    background-color: #0c385a;
+    color: white;
+    border: none;
+    padding: 12px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    display: inline;
+    position: absolute;
+    right: 40%;
+}
