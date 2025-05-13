@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Highlight Low Marks</title>
+<style>
+    table, th, td {
+    border: 2px solid rgb(4, 4, 4);     
+    border-collapse: collapse;   
+    padding: 20px 300px;           
+    text-align: center;          
+    }
+</style>
+</head>
+<body>
+
+<table id="studentTable">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Marks</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr><td>Naaz</td><td>98</td></tr>
+    <tr><td>Prity</td><td>95</td></tr>
+    <tr><td>Kishan</td><td>35</td></tr>
+    <tr><td>Vamshi</td><td>99</td></tr>
+    <tr><td>Aavani</td><td>100</td></tr>
+    <tr><td>Arsheel</td><td>25</td></tr>
+    </tbody>
+</table>
+
+<script>
+    
+    var rows = document.querySelectorAll("#studentTable tbody tr");
+
+    for (var i = 0; i < rows.length; i++) {
+    var marks = parseInt(rows[i].cells[1].innerText);
+    if (marks < 80) {
+        rows[i].style.backgroundColor = "red"; 
+    }
+    }
+</script>
+
+</body>
+</html>

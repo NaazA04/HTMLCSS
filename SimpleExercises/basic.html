@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            padding: 20px;
+
+        }
+        .cont{
+            background-color: #ccb0e6;
+            text-align: center;
+            padding: 50px 20px 20px ;
+            font-size: 20px;
+            border: 1px solid #333;
+            border: solid 2px black;
+    }
+        table, th, td {
+        border: 2px solid rgb(4, 4, 4);     
+        border-collapse: collapse;   
+        padding: 20px;           
+        text-align: center;          
+        }
+
+    </style>
+</head>
+<body>
+    <h2> 3 x 3 grid layout </h2>
+    <div class="grid">
+        <div class="cont">Apple</div>
+        <div class="cont">Banana</div>
+        <div class="cont">Orange</div>
+        <div class="cont">Pear</div>
+        <div class="cont">Grapes</div>
+        <div class="cont">Papaya</div>
+        <div class="cont">Kiwi</div>
+        <div class="cont">Pineapple</div>
+        <div class="cont"><table>
+            <caption><strong>Tech Product Comparison Table</strong></caption>
+    
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Availability</th>
+                <th>Rating</th>
+                <th>Launch Date</th>
+            </tr>
+    
+            <tr>
+                <td>Headphones</td>
+                <td>$799</td>
+                <td>Out Of Stock</td>
+                <td>&starf;4.5</td>
+                <td>Sep 2026</td>
+            </tr>
+    
+            <tr>
+                <td>Nike Dunks</td>
+                <td>$120</td>
+                <td>Pre-Order</td>
+                <td> &starf; 4.7</td>
+                <td>Jun 2025</td>
+            </tr>
+    
+            <tr>
+                <td rowspan="2" >Necklace</td>
+                <td>$120</td>
+                <td>In-Stock</td>
+                <td> &starf; 4.2</td>
+                <td>May 2025</td>
+            </tr>
+    
+            <tr>
+                <td colspan="4"> Includes bonus carrying case and 1-year warranty</td>
+            </tr>
+    
+    
+        </table></div>
+    </div>
+
+    </div>
+</body>
+</html>
