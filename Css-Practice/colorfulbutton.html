@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-1</title>
+    <style>
+        body{
+            background-color: rgb(64, 62, 62);
+        }
+        .b1{
+            font-family:monospace;
+            width: 200px;
+            height: 72px;
+            border-radius: 2px;
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            background-color: black;
+            color: lightgray;
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to bottom left, #b10ae9 , #ff7e5f);
+            border-image-slice: 1;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+
+        .b1:hover {
+        transform: scale(1.05); 
+        color: white;          
+        }
+
+        .b1:active{
+            color: white;
+            border-width: 2px;
+            border-style: solid;
+            border-image: linear-gradient(to bottom left, #ff7e5f ,#b10ae9);
+            border-image-slice: 1;
+        }
+    </style>
+</head>
+<body>
+    <button class="b1">Start Coding!</button>
+</body>
+</html>
