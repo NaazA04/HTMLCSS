@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-2</title>
+    <style>
+        .searchbar{
+            height: 25px;
+            width:50px;
+        }
+        .searchbar-cont{
+            position: absolute;
+            top: 10%;
+            left: 20%;
+        }
+        .searchbar:focus, .searchbar:active{
+            transition: width 0.4s ease;
+            width: 200px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: rgb(0, 102, 255);
+            outline: none;
+        }
+        .searchbar-cont input[type="text"]:focus::placeholder {
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="searchbar-cont">
+        <label for="search-input">Search:</label>
+        <input id="search-input" class="searchbar" type="text" placeholder="Search..">
+    </div>
+</body>
+</html>

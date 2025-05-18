@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Practice-3</title>
+<style>
+    body {
+    background-color: #cdddf6; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    }
+
+    .cardcont {
+    width: 350px;
+    background-color: rgb(30, 29, 29);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    overflow: hidden;
+    font-family: monospace;
+    }
+
+    .img1 {
+    width: 310px;
+    margin: 20px 20px 20px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    }
+
+    .info {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px 5px 20px;
+    gap: 15px;
+    }
+
+    .img2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+    }
+
+    .texts {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .p1 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    }
+
+    .p2 {
+    color: rgb(195, 190, 190);
+    font-size: 12px;
+    margin: 0;
+    }
+
+    .more {
+    display: flex;
+    padding: 10px 20px;
+    gap: 10px;
+    background-color:  rgb(30, 29, 29);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width:310px;
+    position:absolute;
+    top:68%;
+    opacity:0;
+    }
+
+    .hearts, .chats {
+    background-color: rgba(71, 71, 71, 0.705);
+    color: white;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    }
+
+    .cardcont:hover + .more{
+        opacity: 1;
+    }
+    
+    .cardcont:hover {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+</style>
+</head>
+<body>
+<div class="cardcont">
+    <img class="img1" src="https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_640.png" />
+    
+    <div class="info">
+        <img class="img2" src="https://images.ctfassets.net/82d3r48zq721/5nu9ucFJsFxIyP3Gtn0k3R/1e9540898865229d64b2eae22a5bb286/White-kitten-wrapped-in-blankets_resized.jpg?w=800&q=50" />
+        <div class="texts">
+        <p class="p1">Abstract Gradient Project</p>
+        <p class="p2">Scrimsbee McScrimslee</p>
+        </div>
+    </div>
+    </div>
+    <div class="more">
+        <div class="hearts">&#129293; 8</div>
+        <div class="chats">&#128172; 32</div>
+    </div>
+</body>
+</html>
