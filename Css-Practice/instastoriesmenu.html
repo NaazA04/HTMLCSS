@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    html,body{
+        background-color: black;
+    }
+    .story{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+    p{
+        color: white;
+        font-family: monospace;
+        font-size: 7px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:9px;
+    }
+    .story-menu{
+        padding-left: 0;
+        list-style-type: none;
+        display:flex;
+    }
+    .pfp{
+        padding: 3px;
+        width: 50px;
+        height:50px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:12px;
+    }
+    .img{
+        height:100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 1.5px solid black;
+    }
+    .new > .pfp{
+        background:linear-gradient(to right , rgb(255, 2, 196), rgb(200, 0, 255), rgb(255, 191, 0)); 
+    }
+    .view> .pfp{
+        background-color: rgb(162, 157, 157);
+    }
+    .live::after{
+        content: 'LIVE';
+        color: white;
+        background-color: red;
+        font-size: 5px;
+        font-family: arial;
+        position: absolute;
+        top:63%;
+        border-radius: 2px;
+        padding: 2px;
+        width: 20px;
+        font-weight: 800;
+        margin:auto;
+        left:12%;
+        right:0;
+    }
+</style>
+<body>
+    <ul class="story-menu">
+        <li class="story new">
+            <div class="pfp">
+                <img class="img" src="https://imgs.search.brave.com/5UXUrwnw8J0ENnlCfKBvy2iT3ZiU9L2WC2CXtxFJfO0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvcGZw/LXBpY3R1cmVzLWsz/ZHF4bjNuMG5heGVm/bjIuanBn">
+            </div>
+            <p>Aavani</p>
+        </li>
+        <li class="story view live">
+            <div class="pfp">
+                <img class="img" src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg">
+            </div>
+            <p> Prity</p>
+        </li>
+        <li class="story new">
+            <div class="pfp">
+                <img class="img" src="https://imgs.search.brave.com/wHfeFqGRlfXJ4zUXHIIyFOvJdPF32jGieQW2eVapIgI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyMy8w/MS8yNy8xMy8xMi9w/b3J0cmFpdC03NzQ4/NjY5XzY0MC5qcGc">
+            </div>
+            <p>James</p>
+        </li>
+    </ul>
+</body>
+</html>
