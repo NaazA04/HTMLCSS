@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple To-Do List</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .todo-box {
+      width: 300px;
+      background-color: #ffffff;
+      padding: 20px;
+      border: 2px dashed #2a9d8f;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .todo-box h3 {
+      text-align: center;
+      color: #2a9d8f;
+      margin-bottom: 15px;
+    }
+
+    .todo-box ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .todo-box li {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .todo-box li::before {
+      content: "📝 ";
+    }
+
+    .todo-box li.done::before {
+      content: "✅ ";
+    }
+  </style>
+</head>
+<body>
+  <div class="todo-box">
+    <h3>To-Do List</h3>
+    <ul>
+      <li class="done">Learn HTML</li>
+      <li class="done">Practice CSS</li>
+      <li>Build Projects</li>
+    </ul>
+  </div>
+</body>
+</html>
