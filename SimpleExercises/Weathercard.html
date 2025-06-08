@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Card</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to top right, #89f7fe, #66a6ff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .weather-card {
+      background-color: white;
+      width: 250px;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .weather-card h2 {
+      margin: 0;
+      color: #0077b6;
+    }
+
+    .weather-card p {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .weather-icon {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+
+    .temp {
+      font-size: 40px;
+      color: #ff7b00;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-card">
+    <h2>Mumbai</h2>
+    <div class="weather-icon">🌤️</div>
+    <p class="temp">32°C</p>
+    <p>Partly Cloudy</p>
+  </div>
+</body>
+</html>
